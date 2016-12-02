@@ -38,9 +38,9 @@ var randomColor = function () {
 }
 
 var doWork = function () {
-  allDivsInTheEditor.css("backgroundColor",randomColor());
+//  allDivsInTheEditor.css("backgroundColor",randomColor());
   $(parent.document.body).append("HIII!");
-  allDivsInTheEditor.shake();
+  topbar.
 }
 doWork();
 var i=0;
