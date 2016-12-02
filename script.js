@@ -32,15 +32,16 @@ allDivsInTheEditor.keydown(function() {
   alert( "Wow, you pressed a button!" );
   allDivsInTheEditor.css("font-size", random235/20);
   console.log("HI!");
+  topbar.append("<button>Herro!</button>");
 });
 var randomColor = function () {
   return "rgb(" + random255() + "," + random255() + "," + random255() + ")";
 }
 
 var doWork = function () {
-//  allDivsInTheEditor.css("backgroundColor",randomColor());
-  $(parent.document.body).append("HIII!");
-  topbar.
+  allDivsInTheEditor.css("backgroundColor",randomColor());
+  editor.append("HIII!");
+//  topbar.append("<button>Herro!</button>");
 }
 doWork();
 var i=0;
