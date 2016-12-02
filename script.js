@@ -2,7 +2,21 @@ var editor = $(parent.document.body)
 var topbar = $(parent.parent.document.body).find("#topbar")
 
 var allDivsInTheEditor = editor.find("div")
+function shake() {
+  var div = document.getElementById('yourElementID');
+  var interval = 100;
+  var distance = 10;
+  var times = 4;
 
+  $(div).css('position', 'relative');
+
+  for (var iter = 0; iter < (times + 1) ; iter++) {
+    $(div).animate({
+      left: ((iter % 2 == 0 ? distance : distance * -1))
+    }, interval);
+  }                                                                                                          
+  $(div).animate({ left: 0 }, interval);
+}
 
 
 
@@ -26,7 +40,7 @@ var randomColor = function () {
 var doWork = function () {
   allDivsInTheEditor.css("backgroundColor",randomColor());
   $(parent.document.body).append("HIII!");
-  allDivsInTheEditor.effect( "shake" );
+  allDivsInTheEditor.shake();
 }
 doWork();
 var i=0;
